@@ -44,11 +44,12 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'carrierwave', '~> 0.8.0'
 
   # ActiveRecord 3.3 is unlikely, but prevent it just in case.
-  gem.add_runtime_dependency 'activerecord', '~> 4.0'
+  gem.add_runtime_dependency 'activerecord'
 
-  gem.add_development_dependency 'sqlite3', '~> 1.3'
-  gem.add_development_dependency 'rspec', '~> 2.12'
+  gem.add_development_dependency 'sqlite3'
+  gem.add_development_dependency 'rspec'
 
   gem.platform = Gem::Platform::RUBY
-  gem.required_ruby_version = '>= 1.9.3'
+  gem.required_ruby_version = '>= 2.0.0'
+  
 end
